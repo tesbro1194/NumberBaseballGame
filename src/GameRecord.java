@@ -12,7 +12,7 @@ public class GameRecord {
 
     static TreeMap<Integer, Integer> level4Record () {
         int Level4GameCounts = PlayLevel4.getLevel4Counts();
-        int Level4TrialCounts = MatchNumbers4.getLevel4TrialCounts();
+        int Level4TrialCounts = MatchNumber4.getLevel4TrialCounts();
         recordMap.put(Level4GameCounts, Level4TrialCounts);
         return recordMap;
     }

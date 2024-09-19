@@ -13,7 +13,8 @@ public class Beginning {
         while (validOutside) {
             while (validInside) {
                 try {
-                    input = inputValue.nextInt();
+                    String strInput = inputValue.nextLine();
+                    input = Integer.parseInt(strInput);
                     validOutside = false;
                     if (!(input == 0 || input == 1 || input == 2 || input == 3)) {
                         System.out.println("잘못된 입력입니다");
@@ -28,6 +29,6 @@ public class Beginning {
                 }
             }
         }
-    return input;
+        return input;
     }
 }

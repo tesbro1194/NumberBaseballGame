@@ -6,8 +6,6 @@ public class MatchNumber5 {
     int strikeCount;
     static int trialCounts;
 
-
-
     boolean operate5 (ArrayList<Integer> arrayList, int a, int b, int c, int d, int e, boolean valid) {
         if (arrayList.contains(a)) {
             ballCount ++;

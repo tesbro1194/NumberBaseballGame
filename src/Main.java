@@ -6,7 +6,7 @@ public class Main {
 
         Beginning beginning = new Beginning();
         int startKey = beginning.begin();
-        // 0. 자리수 설정 1. 게임 시작하기 2. 게임 기록 보기 3. 종료하기
+
         switch (startKey) {
             case 0:
                 System.out.println("설정하고자 하는 자리수를 입력하세요(3, 4, 5)");

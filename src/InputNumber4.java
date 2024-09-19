@@ -26,7 +26,7 @@ public class InputNumber4 {
 
         while (valid) {
             try {
-                System.out.println((MatchNumbers4.getLevel4TrialCounts() + 1) + "번 째 시도입니다");
+                System.out.println((MatchNumber4.getLevel4TrialCounts() + 1) + "번 째 시도입니다");
 
                 String StrAnswerNumber = inputNumber.nextLine();
                 int answerNumber = Integer.parseInt(StrAnswerNumber);

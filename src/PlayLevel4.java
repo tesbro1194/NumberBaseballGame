@@ -12,13 +12,13 @@ public class PlayLevel4 {
             ArrayList<Integer> numberList = new ArrayList<>(makeNumber4.makeNumbers4());
             System.out.println(numberList);
 
-            MatchNumbers4 matchNumbers4 = new MatchNumbers4();
+            MatchNumber4 matchNumber4 = new MatchNumber4();
             System.out.println();
             System.out.println("게임을 시작합니다");
 
             do {
                 InputNumber4 forInts = InputNumber4.getForInts();
-                endGameKey = matchNumbers4.operate4(numberList, forInts.first,
+                endGameKey = matchNumber4.operate4(numberList, forInts.first,
                         forInts.second, forInts.third, forInts.forth ,endGameKey);
             } while (endGameKey);
 

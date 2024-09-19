@@ -1,7 +1,6 @@
 import java.util.ArrayList;
 
-
-public class MatchNumbers4 {
+public class MatchNumber4 {
     int ballCount;
     int strikeCount;
     static int trialCounts;
