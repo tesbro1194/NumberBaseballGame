@@ -1,14 +1,14 @@
 import java.util.ArrayList;
 
 
-public class MatchNumbers {
+public class MatchNumbers4 {
     int ballCount;
     int strikeCount;
     static int trialCounts;
 
 
 
-    boolean operate (ArrayList<Integer> arrayList, int a, int b, int c, boolean valid) {
+    boolean operate4 (ArrayList<Integer> arrayList, int a, int b, int c, int d, boolean valid) {
         if (arrayList.contains(a)) {
             ballCount ++;
             if (arrayList.get(0)==a) {
@@ -30,13 +30,20 @@ public class MatchNumbers {
                 ballCount --;
             }
         }
+        if (arrayList.contains(d)) {
+            ballCount ++;
+            if (arrayList.get(3)==d) {
+                strikeCount ++;
+                ballCount --;
+            }
+        }
 
-        if (strikeCount == 3) {
+        if (strikeCount == 4) {
             strikeCount = 0;
             ballCount = 0;
             trialCounts++;
             System.out.println("༼ つ ◕_◕ ༽つ 정답입니다");
-            GameRecord.gameRecord();
+            GameRecord.level4Record();
             trialCounts = 0;
             valid = false;
         } else {
@@ -47,10 +54,10 @@ public class MatchNumbers {
             ballCount = 0;
             valid = true;
         }
-    return valid;
+        return valid;
     }
 
-    public static int getTrialCounts() {
+    public static int getLevel4TrialCounts() {
         return trialCounts;
     }
 }

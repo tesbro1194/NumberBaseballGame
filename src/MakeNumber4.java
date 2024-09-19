@@ -1,20 +1,20 @@
 import java.util.LinkedHashSet;
 import java.util.Random;
 
-public class MakeNumber {
+public class MakeNumber4 {
     int a;
     int b;
     int c;
+    int d;
     Random random = new Random();
 
-    public MakeNumber (){
+    public MakeNumber4 (){
     }
 
-    // 정답 숫자 3개 세팅
-    LinkedHashSet<Integer> makeNumbers () {
+    LinkedHashSet<Integer> makeNumbers4 () {
         LinkedHashSet<Integer> numberSet = new LinkedHashSet<>();
         a = random.nextInt(9) + 1;
-            numberSet.add(a);
+        numberSet.add(a);
         do {
             b = random.nextInt(9) + 1;
             numberSet.add(b);
@@ -23,6 +23,10 @@ public class MakeNumber {
             c = random.nextInt(9) + 1;
             numberSet.add(c);
         } while (c==a || c==b);
-    return numberSet;
+        do {
+            d = random.nextInt(9) + 1;
+            numberSet.add(d);
+        } while (d==a || d==b || d==c);
+        return numberSet;
     }
 }

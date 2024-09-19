@@ -10,6 +10,20 @@ public class GameRecord {
         return recordMap;
     }
 
+    static TreeMap<Integer, Integer> level4Record () {
+        int Level4GameCounts = PlayLevel4.getLevel4Counts();
+        int Level4TrialCounts = MatchNumbers4.getLevel4TrialCounts();
+        recordMap.put(Level4GameCounts, Level4TrialCounts);
+        return recordMap;
+    }
+
+    static TreeMap<Integer, Integer> level5Record () {
+        int Level5GameCounts = PlayLevel5.getLevel5Counts();
+        int Level5TrialCounts = MatchNumber5.getLevel5TrialCounts();
+        recordMap.put(Level5GameCounts, Level5TrialCounts);
+        return recordMap;
+    }
+
     static void showRecord () {
         for (int key : recordMap.keySet()) {
             Integer value = recordMap.get(key);

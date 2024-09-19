@@ -1,25 +1,25 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class PlayGame {
+public class PlayLevel4 {
     boolean endGameKey = false;
     static int gameCounts = 1;
     boolean restartInput;
 
-    public boolean playGames () {
+    public boolean playLevel4 () {
         do {
-            MakeNumber makeNumber = new MakeNumber();
-            ArrayList<Integer> numberList = new ArrayList<>(makeNumber.makeNumbers());
+            MakeNumber4 makeNumber4 = new MakeNumber4();
+            ArrayList<Integer> numberList = new ArrayList<>(makeNumber4.makeNumbers4());
             System.out.println(numberList);
 
-            MatchNumbers matchNumbers = new MatchNumbers();
+            MatchNumbers4 matchNumbers4 = new MatchNumbers4();
             System.out.println();
             System.out.println("게임을 시작합니다");
 
             do {
-                InputNumber threeInts = InputNumber.getThreeInts();
-                endGameKey = matchNumbers.operate(numberList, threeInts.first,
-                        threeInts.second, threeInts.third, endGameKey);
+                InputNumber4 forInts = InputNumber4.getForInts();
+                endGameKey = matchNumbers4.operate4(numberList, forInts.first,
+                        forInts.second, forInts.third, forInts.forth ,endGameKey);
             } while (endGameKey);
 
             System.out.println("* 숫자 야구 게임 *");
@@ -47,9 +47,9 @@ public class PlayGame {
                 }
             }
         } while (restartInput);
-    return restartInput;
+        return restartInput;
     }
-    public static int getGameCounts() {
+    public static int getLevel4Counts() {
         return gameCounts;
     }
 }
