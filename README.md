@@ -1,3 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+</head>
+
+<body>
     <h1>숫자 야구 게임</h1>
     <h2></h2>
     <p>실행 순서 : <span style="color:blue">Main -> Biginnig</span>, 0, 1, 2, 3 중 하나를 입력 받고 다시  <span style="color:blue"> -> Main</span> 으로 <br>
@@ -16,5 +25,12 @@
     MatchNumber, MatchNumber4, MatchNumber5 : 정답 숫자와 입력 숫자 비교 + 정답을 맞추기까지의 입력 시도 횟수(trialCounts)를 GameRecord에 전달<br>
     GameRecord : 전달 받은 게임 판수(gameCounts)와 입력 시도 횟수(trialCounts)를 기록 및 출력 </pre>
     
-    <p>도전 레벨 별 트러블 슈팅 블로그 링크 : https://tes1194.tistory.com/26 , https://tes1194.tistory.com/27 , https://tes1194.tistory.com/29 , https://tes1194.tistory.com/33</p>
+    도전 레벨 별 트러블 슈팅 블로그 링크 : 
+		https://tes1194.tistory.com/26 , 
+		https://tes1194.tistory.com/27 , 
+		https://tes1194.tistory.com/29 , 
+ 		https://tes1194.tistory.com/33<
     
+</body>
+
+</html>
