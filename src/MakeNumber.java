@@ -11,6 +11,7 @@ public class MakeNumber {
     }
 
     // 정답 숫자 3개 세팅
+    // 중복이 있으면 안되기에 Set와 do-while문 사용
     LinkedHashSet<Integer> makeNumbers () {
         LinkedHashSet<Integer> numberSet = new LinkedHashSet<>();
         a = random.nextInt(9) + 1;

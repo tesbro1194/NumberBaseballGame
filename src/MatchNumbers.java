@@ -7,7 +7,8 @@ public class MatchNumbers {
     static int trialCounts;
 
 
-
+    // 조건 1: 입력 숫자가 리스트에 포함되어 있으면 볼, 조건 2: 그중 인덱스-형변환의 이유-가 맞는 경우 볼 -- 스트라이크 ++,
+    // 자리의 수 하나 당 위의 두 조건만 만족하면 되므로(다른 경우는 신경쓸 필요 없으므로) 중첩 if문 사용
     boolean operate (ArrayList<Integer> arrayList, int a, int b, int c, boolean valid) {
         if (arrayList.contains(a)) {
             ballCount ++;

@@ -6,7 +6,7 @@ public class PlayLevel5 {
     static int gameCounts = 1;
     boolean restartInput;
 
-    public boolean playLevel5 () {
+    public void playLevel5 () {
         do {
             MakeNumber5 makeNumber5 = new MakeNumber5();
             ArrayList<Integer> numberList = new ArrayList<>(makeNumber5.makeNumbers5());
@@ -47,7 +47,6 @@ public class PlayLevel5 {
                 }
             }
         } while (restartInput);
-        return restartInput;
     }
     public static int getLevel5Counts() {
         return gameCounts;

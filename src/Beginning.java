@@ -1,4 +1,3 @@
-import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Beginning {
@@ -22,7 +21,7 @@ public class Beginning {
                     } else {
                         validInside = false;
                     }
-                } catch (InputMismatchException e) {
+                } catch (NumberFormatException e) {
                     validOutside = true;
                     System.out.println("0, 1, 2, 3 중 하나를 입력하세요");
                     break;

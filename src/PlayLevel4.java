@@ -6,7 +6,7 @@ public class PlayLevel4 {
     static int gameCounts = 1;
     boolean restartInput;
 
-    public boolean playLevel4 () {
+    public void playLevel4 () {
         do {
             MakeNumber4 makeNumber4 = new MakeNumber4();
             ArrayList<Integer> numberList = new ArrayList<>(makeNumber4.makeNumbers4());
@@ -47,7 +47,6 @@ public class PlayLevel4 {
                 }
             }
         } while (restartInput);
-        return restartInput;
     }
     public static int getLevel4Counts() {
         return gameCounts;
