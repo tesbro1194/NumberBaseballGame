@@ -9,30 +9,31 @@ public class Main {
 
         switch (startKey) {
             case 0:
-                System.out.println("설정하고자 하는 자리수를 입력하세요(3, 4, 5)");
-                Scanner gameLevel = new Scanner(System.in);
-                int inputGameLevel = gameLevel.nextInt();
+                boolean valid = true;
+                do {
+                    System.out.println("설정하고자 하는 자리수를 입력하세요(3, 4, 5)");
+                    Scanner gameLevel = new Scanner(System.in);
+                    String inputGameLevel = gameLevel.next();
 
-                if (inputGameLevel == 3) {
-                    PlayGame playGameInMain = new PlayGame();
-                    playGameInMain.playGames();
-                }
-                if (inputGameLevel == 4) {
-                    PlayLevel4 playLevel4InMain = new PlayLevel4();
-                    playLevel4InMain.playLevel4();
-                }
-                if (inputGameLevel == 5) {
-                    PlayLevel5 playLevel5InMain = new PlayLevel5();
-                    playLevel5InMain.playLevel5();
-                } else {
-                    System.out.println("잘못된 입력입니다.");
-                    System.out.println("게임을 종료합니다.");
-                }
-
+                    if (inputGameLevel.equals("3")) {
+                        PlayGames playGameInMain = new PlayGames();
+                        playGameInMain.playGames(3);
+                    } else if (inputGameLevel.equals("4")) {
+                        PlayGames playLevel4InMain = new PlayGames();
+                        playLevel4InMain.playGames(4);
+                    } else if (inputGameLevel.equals("5")) {
+                        PlayGames playLevel5InMain = new PlayGames();
+                        playLevel5InMain.playGames(5);
+                    } else {
+                        System.out.println("잘못된 입력입니다.");
+                        valid = false;
+                    }
+                } while (!valid);
+                break;
             case 1:
                 // 위 if (inputGameLevel == 3)과 동일
-                PlayGame playGameInMain = new PlayGame();
-                playGameInMain.playGames();
+                PlayGames playGameInMain = new PlayGames();
+                playGameInMain.playGames(3);
                 break;
             case 2:
                 System.out.println("게임을 하지 않았습니다.");
