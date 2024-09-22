@@ -19,7 +19,7 @@ public class PlayLevel5 {
             do {
                 InputNumber5 fiveInts = InputNumber5.getFiveInts();
                 endGameKey = matchNumbers5.operate5(numberList, fiveInts.first,
-                        fiveInts.second, fiveInts.third, fiveInts.forth, fiveInts.fifth, endGameKey);
+                        fiveInts.second, fiveInts.third, fiveInts.forth, fiveInts.fifth);
             } while (endGameKey);
 
             System.out.println("* 숫자 야구 게임 *");
@@ -44,6 +44,7 @@ public class PlayLevel5 {
                 default -> {
                     System.out.println("잘못된 입력입니다");
                     System.out.println("게임을 종료합니다");
+                    restartInput = false;
                 }
             }
         } while (restartInput);

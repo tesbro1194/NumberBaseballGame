@@ -4,10 +4,9 @@ public class MatchNumber4 {
     int ballCount;
     int strikeCount;
     static int trialCounts;
+    boolean valid;
 
-
-
-    boolean operate4 (ArrayList<Integer> arrayList, int a, int b, int c, int d, boolean valid) {
+    boolean operate4 (ArrayList<Integer> arrayList, int a, int b, int c, int d) {
         if (arrayList.contains(a)) {
             ballCount ++;
             if (arrayList.get(0)==a) {

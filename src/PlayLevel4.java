@@ -19,7 +19,7 @@ public class PlayLevel4 {
             do {
                 InputNumber4 forInts = InputNumber4.getForInts();
                 endGameKey = matchNumber4.operate4(numberList, forInts.first,
-                        forInts.second, forInts.third, forInts.forth ,endGameKey);
+                        forInts.second, forInts.third, forInts.forth);
             } while (endGameKey);
 
             System.out.println("* 숫자 야구 게임 *");
@@ -44,6 +44,7 @@ public class PlayLevel4 {
                 default -> {
                     System.out.println("잘못된 입력입니다");
                     System.out.println("게임을 종료합니다");
+                    restartInput = false;
                 }
             }
         } while (restartInput);

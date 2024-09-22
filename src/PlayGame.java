@@ -22,7 +22,7 @@ public class PlayGame {
             do {
                 InputNumber threeInts = InputNumber.getThreeInts();
                 endGameKey = matchNumbers.operate(numberList, threeInts.first,
-                        threeInts.second, threeInts.third, endGameKey);
+                        threeInts.second, threeInts.third);
             } while (endGameKey);
 
             System.out.println("* 숫자 야구 게임 *");
@@ -48,6 +48,7 @@ public class PlayGame {
                 default -> {
                     System.out.println("잘못된 입력입니다");
                     System.out.println("게임을 종료합니다");
+                    restartInput = false;
                 }
             }
         } while (restartInput);
