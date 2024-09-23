@@ -13,11 +13,11 @@
     <pre>
 	Main -> Biginnig</span> 0, 1, 2, 3 중 하나를 입력 받고 다시 -> Main <br>
 	-> 0: 자리수 설정, 숫자 3, 4, 5를 입력 받음. 
-		3: -> PlayGame || 4: -> PlayLevel4 || 5: -> PlayLevel5 <br>
+		3: 메서드 인자 3 || 4: 메서드 인자 4 || 5: 메서드 인자 5 <br>
 	-> 1: 자리수3으로 게임 시작. -> PlayGame</span>(위에서 자리수 3을 입력 받을 때와 동일)<br>
 	-> 2, 3: 종료</pre>
     <p> 
-    실행 순서 : Main -> Beginning -> Main -> PlayGame -> MakeNumbers -> InputNumbers -> PlayGame -> MatchNumbers...<br>
+    이후 실행 순서 : PlayGames -> MakeNumbers -> InputNumbers -> MatchNumbers...<br>
     </p>
     <h3>> 클래스 별 역할</h3>
     <pre> 
